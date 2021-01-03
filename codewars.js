@@ -700,4 +700,10 @@ function maskify(cc) {
   return cc.length > 4 ? cc.slice(-4).padStart(cc.length, "#") : cc
 }
 
+// twooldestages https://www.codewars.com/kata/511f11d355fe575d2c000001/train/javascript
+
+function twoOldestAges(ages){
+  return ages.sort((a,b) => a - b).slice(-2)
+}
+
 //
