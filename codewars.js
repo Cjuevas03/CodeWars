@@ -14,4 +14,46 @@ function paperwork(n, m) {
       }
      return n * m
   }
-jhomar  
+// Opposite number
+  function opposite(number) {
+    return -number
+  }
+//Even or Odd
+function even_or_odd(number) {
+  if (number % 2 === 0){
+    return "Even"
+  }else{
+    return "Odd"
+  }
+}
+//Fundamentals: Return
+function add(a,b){
+  return a + b
+}
+
+function divide(a,b){
+  return a / b
+}
+
+function multiply(a,b){
+  return a * b
+}
+
+function mod(a,b){
+  return a % b
+}
+ 
+function exponent(a,b){
+  return Math.pow(a,b)
+}
+  
+function subt(a,b){
+  return a - b
+}
+
+//Multiply
+function multiply(a, b){
+  let answer = a * b;
+  return answer
+}
+//
