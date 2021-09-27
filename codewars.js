@@ -64,4 +64,8 @@ function numberToPower(number, power){
   }       
   return result;
 }
-//
+// remove space
+function noSpace(x){
+  return x.split(" ").join("")
+     
+  }
