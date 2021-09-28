@@ -69,3 +69,12 @@ function noSpace(x){
   return x.split(" ").join("")
      
   }
+  // reverse reverse
+  function solution(str){
+    return str.split("").reverse().join("");
+  }
+  // make negativo
+  function makeNegative(num) {
+    // Code?
+    return -Math.abs(num)
+  }
