@@ -114,4 +114,17 @@ function getCount(str) {
   return vowelsCount;
 }
  
+// build a square
+function generateShape(integer){
+  let str = ""
+  for(let i = 0; i < integer; i++){
+    for(let j = 0; j < integer; j++){
+      str += '+'
+    }
+    if (i < integer-1) str += '\n'
+  }
+    console.log(str)
+    return str
+  }
 
+  
