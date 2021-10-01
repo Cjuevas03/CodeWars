@@ -78,3 +78,23 @@ function noSpace(x){
     // Code?
     return -Math.abs(num)
   }
+  // return reversed string
+  function solution(str){
+    return str.split("").reverse().join("");
+  }
+//remove string spaces
+function noSpace(x){
+  return x.split(" ").join("")
+  }
+  // simple multiplication 
+  function simpleMultiplication(number) {
+    // your code........
+ if (number % 2 == 0){
+   return number * 8
+  
+ }else { 
+   return number * 9
+ }
+  
+  
+}  
