@@ -138,4 +138,12 @@ function generateShape(integer){
     return sum;
   }
 
+  // remove first and last character
+
+  function removeChar(str){
+    //You got this!
+     return str.slice(1, str.length - 1);
+   
+   };
+
   
