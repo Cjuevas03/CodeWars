@@ -177,3 +177,18 @@ function sumTwoSmallestNumbers(numbers) {
   numbers = numbers.sort(function(a,b){return a - b;});
   return numbers[0] + numbers[1];
 };
+
+//Shortest Word
+function findShort(s){
+  
+  let words = s.split(" ")
+  let shortest = words[0].length
+  let word
+  
+  for(let i = 1; i < words.length; i++){
+    word = words[i].length
+    if(shortest > word) shortest = word
+  }
+  
+  return shortest
+}
