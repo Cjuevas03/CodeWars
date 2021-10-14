@@ -268,3 +268,36 @@ function iqTest(numbers){
 function toCamelCase(str){
   return str.split(/[,_-]+/).map( (s, i) => i !== 0 ? s.charAt(0).toUpperCase() + s.slice(1) : s).join('');
 }
+
+
+
+///longest word
+function longestWord(text){
+  var word = 0;
+  let splitStr = text.split(' ');
+  for(var i = 0; i < splitStr.length; i++){
+    if(splitStr[i].length > word){
+      word = splitStr[i].length;
+    }
+    return word;
+}}
+
+//// get Average.
+
+function getAverage(marks){
+  //TODO : No neg numbers no modifiying ; sum > int math.floor int reduce(), accumulator, currentvalue acc - current , / by arr.length
+
+}
+
+Test.assertEquals(getAverage([2,2,2,2]),2);
+Test.assertEquals(getAverage([1,2,3,4,5,]),3);
+Test.assertEquals(getAverage([1,1,1,1,1,1,1,2]),1);
+
+
+/// strtoCamelCase
+function toCamelCase(str){
+  return str.split(/[,_-]+/).map( (s, i) => i !== 0 ? s.charAt(0).toUpperCase() + s.slice(1) : s).join('');
+}
+
+
+
