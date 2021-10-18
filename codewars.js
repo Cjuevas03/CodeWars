@@ -304,3 +304,11 @@ function toBinary(n){
   return +n.toString(2);
 }
 
+/// find multiples of a number
+function findMultiples(integer, limit) {
+  let arr = [];
+  for(let i = integer; i <= limit; i++){
+    arr.push(i)
+  }
+  return arr.filter(x => x % integer === 0)
+}
