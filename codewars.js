@@ -312,3 +312,13 @@ function findMultiples(integer, limit) {
   }
   return arr.filter(x => x % integer === 0)
 }
+
+/// Parse float
+function parseF(s) {
+  if (Number.isNaN(parseFloat(s))){
+    return null
+  }
+  else {
+    return parseFloat(s)
+  }
+}
