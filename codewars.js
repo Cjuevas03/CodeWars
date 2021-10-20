@@ -322,3 +322,13 @@ function parseF(s) {
     return parseFloat(s)
   }
 }
+
+/// Generate range of intergers
+
+function generateRange(min, max, step){
+  const array = [];
+  for (let x = min;x <= max; x+=step) {
+    array.push(x)
+    }
+  return array;
+}
