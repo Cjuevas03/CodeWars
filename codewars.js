@@ -332,3 +332,10 @@ function generateRange(min, max, step){
     }
   return array;
 }
+
+/// mean of array
+function getAverage(marks){
+  //TODO : calculate the downwar rounded average of the marks array
+  let average = marks.reduce(function(a,b){return a + b})
+  return Math.floor(average / marks.length)
+}
