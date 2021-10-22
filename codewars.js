@@ -339,3 +339,8 @@ function getAverage(marks){
   let average = marks.reduce(function(a,b){return a + b})
   return Math.floor(average / marks.length)
 }
+
+/// invert values
+function invert(array) {
+  return array.map(item => item * -1);
+}
