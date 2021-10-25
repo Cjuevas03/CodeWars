@@ -344,3 +344,6 @@ function getAverage(marks){
 function invert(array) {
   return array.map(item => item * -1);
 }
+
+/// sum the strings
+let sumStr = (a,b) => (Number(a) + Number(b)).toString()
