@@ -347,3 +347,8 @@ function invert(array) {
 
 /// sum the strings
 let sumStr = (a,b) => (Number(a) + Number(b)).toString()
+
+/// Super Duper Easy
+function problem(x){
+  return typeof x === "string" ? "Error" : 50 * x + 6;
+}
