@@ -352,3 +352,19 @@ let sumStr = (a,b) => (Number(a) + Number(b)).toString()
 function problem(x){
   return typeof x === "string" ? "Error" : 50 * x + 6;
 }
+
+/// Twice as old.
+
+function twiceAsOld(dadAge, sonAge) {
+  let beginnerAge = dadAge - sonAge
+  let beginnerSonAge = 0
+  while(beginnerSonAge * 2 !== beginnerAge){
+    beginnerAge++ 
+    beginnerSonAge++
+  }
+  return Math.abs(sonAge - beginnerSonAge)
+}
+
+function twiceAsOld(dadYearsOld, sonYearsOld) {
+  return Math.abs(sonYearsOld * 2 - dadYearsOld)
+}
