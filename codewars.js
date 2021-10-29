@@ -368,3 +368,8 @@ function twiceAsOld(dadAge, sonAge) {
 function twiceAsOld(dadYearsOld, sonYearsOld) {
   return Math.abs(sonYearsOld * 2 - dadYearsOld)
 }
+
+/// Syntaxdebug
+function main(a, b){ ['verb', 'noun']
+  return a + b;
+}
