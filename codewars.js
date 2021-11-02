@@ -373,3 +373,16 @@ function twiceAsOld(dadYearsOld, sonYearsOld) {
 function main(a, b){ ['verb', 'noun']
   return a + b;
 }
+
+/// what is between
+function between(a, b) {
+  let arr = []
+  for(let i = a; i <= b; i++){
+    arr.push(i) 
+  }
+  return arr
+}
+
+function between(a, b) {
+  return Array.from({length: b - a + 1}, (v, i) => i + a)
+}
