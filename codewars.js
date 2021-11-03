@@ -386,3 +386,6 @@ function between(a, b) {
 function between(a, b) {
   return Array.from({length: b - a + 1}, (v, i) => i + a)
 }
+
+/// string repeat
+let repeatStr = (n, s) => s.repeat(n)
