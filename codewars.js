@@ -389,3 +389,8 @@ function between(a, b) {
 
 /// string repeat
 let repeatStr = (n, s) => s.repeat(n)
+
+/// Reversed sequence
+const reverseSeq = n => {
+  return [...Array(n + 1).keys()].sort((a,b) => b - a).slice(0, -1)
+};
