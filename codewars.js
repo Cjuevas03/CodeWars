@@ -394,3 +394,11 @@ let repeatStr = (n, s) => s.repeat(n)
 const reverseSeq = n => {
   return [...Array(n + 1).keys()].sort((a,b) => b - a).slice(0, -1)
 };
+
+/// find smallest integer in array
+class SmallestIntegerFinder {
+  findSmallestInt(args) {
+  let smallest = args.sort((a,b)=> a-b);
+  return smallest[0];
+  }
+}
