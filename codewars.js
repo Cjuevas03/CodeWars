@@ -402,3 +402,19 @@ class SmallestIntegerFinder {
   return smallest[0];
   }
 }
+
+/// set alarm
+function setAlarm(a, b){
+  if(a === true && b === true){
+    return false;
+  }
+  else if (a === true && b === false){
+    return true;
+  }
+  else if(a === false && b === true){
+    return false;
+  }
+  else {
+      return false;
+  }
+}
