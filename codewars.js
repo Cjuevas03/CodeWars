@@ -430,3 +430,13 @@ else {
   return false;
   }
 }
+
+/// NBA avg per 48mins
+
+function pointsPer48(ppg, mpg) {
+  if(mpg === 0) return 0
+  let result = (48 / mpg) * ppg
+  return +result.toFixed(1)
+}
+
+///
