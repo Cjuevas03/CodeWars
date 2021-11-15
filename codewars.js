@@ -439,4 +439,5 @@ function pointsPer48(ppg, mpg) {
   return +result.toFixed(1)
 }
 
-///
+/// Code Under Pressure
+let doubleInteger = (i) => i*2 
