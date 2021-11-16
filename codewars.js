@@ -440,4 +440,12 @@ function pointsPer48(ppg, mpg) {
 }
 
 /// Code Under Pressure
-let doubleInteger = (i) => i*2 
+let doubleInteger = (i) => i*2
+
+// USD > CNY https://www.codewars.com/kata/5977618080ef220766000022/train/javascript
+function usdcny(usd) {
+  let yuan = (usd * 6.75).toFixed(2)
+  return `${yuan} Chinese Yuan`
+}
+
+//
