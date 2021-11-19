@@ -472,3 +472,11 @@ function sumArray(array) {
     return array.sort((a,b) => a - b).slice(1, array.length - 1).reduce( (a,b) => a + b)
   }
 }
+
+
+// Nameonbillboard https://www.codewars.com/kata/570e8ec4127ad143660001fd/solutions/javascript
+function billboard(name, price = 30){
+  let cost = 0
+  for (let i = 1; i <= name.length; i++){cost += price}
+  return cost
+} 
