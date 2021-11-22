@@ -480,3 +480,17 @@ function billboard(name, price = 30){
   for (let i = 1; i <= name.length; i++){cost += price}
   return cost
 } 
+
+// BMI https://www.codewars.com/kata/57a429e253ba3381850000fb
+function bmi(weight, height) {
+  let bmi = weight / (height * height)
+  if (bmi <= 18.5) {
+    return 'Underweight'
+  }else if (bmi <= 25) {
+    return 'Normal'
+  }else if (bmi <= 30) {
+    return 'Overweight'
+  }else {
+    return 'Obese'
+  }
+}
