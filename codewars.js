@@ -494,3 +494,17 @@ function bmi(weight, height) {
     return 'Obese'
   }
 }
+
+// iloveualotalttle https://www.codewars.com/kata/57f24e6a18e9fad8eb000296/train/javascript
+const phrases = [
+  'I love you',
+  'a little',
+  'a lot',
+  'passionately',
+  'madly',
+  'not at all',
+]
+
+function howMuchILoveYou(n) {
+   return phrases[(n - 1) % phrases.length] 
+}
