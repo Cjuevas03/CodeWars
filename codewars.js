@@ -513,3 +513,12 @@ function howMuchILoveYou(n) {
 const zeroFuel = (distanceToPump, mpg, fuelLeft) => {
   return distanceToPump <= mpg * fuelLeft ? true : false
 };
+
+// urasquare https://www.codewars.com/kata/54c27a33fb7da0db0100040e
+
+var isSquare = function(n){
+  let squareRoot = Math.sqrt(n)
+  return squareRoot * squareRoot === n && Number.isInteger(squareRoot) ? true : false
+}
+
+//
