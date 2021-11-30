@@ -521,4 +521,13 @@ var isSquare = function(n){
   return squareRoot * squareRoot === n && Number.isInteger(squareRoot) ? true : false
 }
 
-//
+// theaveragelength https://www.codewars.com/kata/5a430359e1ce0e35540000b1/solutions/javascript/me/best_practice
+function averageLength(arr) { 
+  let sum = 0
+  let avg = 0
+  for ( let i = 0; i < arr.length; i++){
+    sum += arr[i].length
+  }
+  avg = Math.round(sum /arr.length)
+  return arr.map(x => x[0].repeat(avg))
+}
