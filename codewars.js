@@ -547,4 +547,22 @@ function findLongest(array){
   return longestNum
 }
 
+// xsandos https://www.codewars.com/kata/55908aad6620c066bc00002a/solutions/javascript
+function XO(str) {
+  let xCount = 0
+  let oCount = 0
+  const strLowerCase = str.toLowerCase()
+  for (let i = 0; i < str.length; i++) {
+    if (strLowerCase.charAt(i) === 'x') {
+      xCount += 1
+    }
+    if (strLowerCase.charAt(i) === 'o') {
+      oCount += 1
+    }
+  } 
+    if (xCount === oCount){
+      return true
+    } else {return false}
+}
+
 //
