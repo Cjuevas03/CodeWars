@@ -531,3 +531,20 @@ function averageLength(arr) {
   avg = Math.round(sum /arr.length)
   return arr.map(x => x[0].repeat(avg))
 }
+
+// mostdigits  https://www.codewars.com/kata/58daa7617332e59593000006/train/javascript
+
+function findLongest(array){
+  let digitCount = 0
+  let longestNum 
+  console.log(array)
+  array.forEach( x => {
+    if(x.toString().length > digitCount){
+      digitCount = x.toString().length
+      longestNum = x
+    }
+  })
+  return longestNum
+}
+
+//
