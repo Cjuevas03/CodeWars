@@ -565,4 +565,13 @@ function XO(str) {
     } else {return false}
 }
 
-// 
+// anagram detection https://www.codewars.com/kata/529eef7a9194e0cbc1000255/solutions/javascript
+
+var isAnagram = function(test, original) {
+  const sanitizeString = function (str) {
+    return str.toLowerCase().split('').sort().join('');
+  }
+  return sanitizeString(test) == sanitizeString(original)
+};
+
+//
