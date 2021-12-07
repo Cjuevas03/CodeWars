@@ -574,4 +574,11 @@ var isAnagram = function(test, original) {
   return sanitizeString(test) == sanitizeString(original)
 };
 
+// categorizenewmembers https://www.codewars.com/kata/5502c9e7b3216ec63c0001aa/solutions/javascript
+function openOrSenior(data){
+  let arr = []
+  data.forEach(element => element[0] >= 55 && element[1] > 7 ? arr.push('Senior') : arr.push('Open'))
+  return arr
+}
+
 //
