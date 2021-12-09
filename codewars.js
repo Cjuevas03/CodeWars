@@ -581,4 +581,12 @@ function openOrSenior(data){
   return arr
 }
 
+// integersbetweentwonumbers https://www.codewars.com/kata/598057c8d95a04f33f00004e/train/javascript
+function range(startNum, endNum){
+  let result = []
+  for (let i = startNum + 1; i < endNum; i++){
+    result.push(i)
+  }
+  return result
+}
 //
