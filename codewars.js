@@ -594,4 +594,10 @@ function descendingOrder(n){
   return  Number(n.toString().split('').sort(function(a, b){return b-a}).join(''))
 }
 
+// filterthenum https://www.codewars.com/kata/55b051fac50a3292a9000025/train/javascript
+var FilterString = function(value) {
+  let numbers = value.split('').filter(x => Number.isInteger(Number(x)))
+  return Number(numbers.join(''))
+}
+
 //
