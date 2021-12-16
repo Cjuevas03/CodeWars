@@ -606,4 +606,14 @@ function friend(friends){
 }
 
 
+// middlecharacters https://www.codewars.com/kata/56747fd5cb988479af000028/train/javascript
+function getMiddle(s) {
+  let middle = Math.floor(s.length / 2)
+  if (s.length % 2 === 0) {
+    return s.charAt(middle -1) + s.charAt(middle)
+  } else {
+    return s.charAt(middle)
+  }
+}
+
 //
