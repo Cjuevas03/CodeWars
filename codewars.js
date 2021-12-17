@@ -616,4 +616,27 @@ function getMiddle(s) {
   }
 }
 
+//identifycase https://www.codewars.com/kata/5819a6fdc929bae4f5000a33/train/javascript
+function id(c_str) {
+  if(c_str.includes('-') && 
+      !c_str.includes('_') && 
+      c_str.split('').every(x => x === x.toLowerCase()) && 
+      !c_str.includes('__') && 
+      !c_str.includes('--')){
+    return 'kebab'
+  } else if(c_str.includes('_') && 
+          !c_str.includes('-') && 
+          c_str.split().every(x => x === x.toLowerCase() && 
+          !c_str.includes('__'))){
+    return 'snake'
+  } else if(c_str.split('').some(x => x === x.toUpperCase() &&
+          !c_str.includes('_') &&
+          !c_str.includes('-') &&
+          !c_str.includes('__'))){
+    return 'camel'
+  } else {
+    return 'none'
+  }
+}
+
 //
