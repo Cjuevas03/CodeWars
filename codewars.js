@@ -644,4 +644,14 @@ function filter_list(l) {
   return l.filter(x => typeof x === 'number')
 }
 
+// noonerize https://www.codewars.com/kata/56dbed3a13c2f61ae3000bcd/train/javascript
+function noonerize(numbers) {
+  let first = numbers[0].toString()
+  let second = numbers[1].toString()
+  if (numbers.some(x => typeof x !== 'number')){
+    return 'invalid array'
+  }
+  return Math.abs(Number(second[0] + first.substring(1)) - Number(first[0] + second.substring(1)))
+}
+
 //
