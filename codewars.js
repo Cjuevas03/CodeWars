@@ -654,4 +654,20 @@ function noonerize(numbers) {
   return Math.abs(Number(second[0] + first.substring(1)) - Number(first[0] + second.substring(1)))
 }
 
+// numberofpeopleinbus https://www.codewars.com/kata/5648b12ce68d9daa6b000099/train/javascript
+
+let number = function(busStops){
+  let result = 0
+  for(let i = 0; i < busStops.length; i++){
+    result += busStops[i][0]
+    result -= busStops[i][1]
+  }
+  return result
+}
+
+let number = function(busStops){
+  return busStops.reduce((passengers, [getOn, getOff]) => passengers + getOn - getOff,0 )
+}
+
 //
+
