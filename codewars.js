@@ -669,5 +669,12 @@ let number = function(busStops){
   return busStops.reduce((passengers, [getOn, getOff]) => passengers + getOn - getOff,0 )
 }
 
-//
+// removeconsecutiveduplicatewords https://www.codewars.com/kata/5b39e91ee7a2c103300018b3/solutions/javascript
+
+function removeDuplicateWord (str) {
+  //str --> filter word is not the next word -> join
+  return str.split(' ').filter((w, i, a) => w != a[i + 1]).join(' ')
+}
+
+// 
 
