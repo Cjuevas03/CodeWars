@@ -676,5 +676,11 @@ function removeDuplicateWord (str) {
   return str.split(' ').filter((w, i, a) => w != a[i + 1]).join(' ')
 }
 
-// 
+// returnthemissingelement https://www.codewars.com/kata/5299413901337c637e000004/train/javascript
+
+function getMissingElement(superImportantArray){
+  return [1, 2, 3, 4, 5, 6, 7, 8, 9].reduce((a,b) => a + b) - superImportantArray.reduce((a,b) => a + b)
+}
+
+//
 
