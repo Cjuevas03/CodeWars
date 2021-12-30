@@ -682,5 +682,17 @@ function getMissingElement(superImportantArray){
   return [1, 2, 3, 4, 5, 6, 7, 8, 9].reduce((a,b) => a + b) - superImportantArray.reduce((a,b) => a + b)
 }
 
+// sayHello https://www.codewars.com/kata/55955a48a4e9c1a77500005a/solutions/javascript
+
+function greet(name) {
+  if (name === ''){
+    return null
+  } else if (name === null){
+    return null
+  } else {
+    return `hello ${name}!`
+  }
+}
+
 //
 
