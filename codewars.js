@@ -706,4 +706,11 @@ function twoOldestAges(ages){
   return ages.sort((a,b) => a - b).slice(-2)
 }
 
+// javascriptarrayfilter https://www.codewars.com/kata/514a6336889283a3d2000001/solutions/javascript
+
+function getEvenNumbers(numbersArray){
+  return numbersArray.filter(x => x % 2 === 0)
+}
+
 //
+
