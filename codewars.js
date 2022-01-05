@@ -712,5 +712,16 @@ function getEvenNumbers(numbersArray){
   return numbersArray.filter(x => x % 2 === 0)
 }
 
+//mumbling https://www.codewars.com/kata/5667e8f4e3f572a8f2000039/solutions/javascript
+
+function accum(s) {
+  let mumble = []
+  let arr = s.split('')
+  for (let i = 0; i < arr.length; i++){
+    mumble.push(arr[i].toUpperCase() + arr[i].toLowerCase().repeat(i))
+  }
+  return mumble.join('-')
+}
+
 //
 
