@@ -723,5 +723,17 @@ function accum(s) {
   return mumble.join('-')
 }
 
-//
+// jadencasingstrings https://www.codewars.com/kata/5390bac347d09b7da40006f6
+String.prototype.toJadenCase = function () {
+  let wordsArray = this.toLowerCase().split(' ')
+  let capsArray = []
+  wordsArray.forEach(word =>  capsArray.push(word[0].toUpperCase() + word.slice(1)))
+  return capsArray.join(' ')
+};
+
+String.prototype.toJadenCase = function () {
+  return this.split(' ').map( word => word[0].toUpperCase() + word.slice(1)).join(' ')
+};
+
+// 
 
