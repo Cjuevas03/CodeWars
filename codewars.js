@@ -735,5 +735,11 @@ String.prototype.toJadenCase = function () {
   return this.split(' ').map( word => word[0].toUpperCase() + word.slice(1)).join(' ')
 };
 
-// 
+// disemvoweltrolls https://www.codewars.com/kata/52fba66badcd10859f00097e/solutions/javascript
+
+function disemvowel(str) {
+  return str.replace(/a|e|i|o|u/ig, '')
+}
+
+//
 
