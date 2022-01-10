@@ -741,5 +741,18 @@ function disemvowel(str) {
   return str.replace(/a|e|i|o|u/ig, '')
 }
 
-//
+// characterFreq https://www.codewars.com/kata/548ef5b7f33a646ea50000b2/train/javascript
 
+function charFreq(message) {
+  let charMap = {}
+  for (let char of message){
+    if (charMap.hasOwnProperty(char)){
+      charMap[char]++
+    }else {
+      charMap[char] = 1
+    }
+  }
+  return charMap
+}
+
+// 
