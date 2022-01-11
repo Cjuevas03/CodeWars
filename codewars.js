@@ -755,4 +755,12 @@ function charFreq(message) {
   return charMap
 }
 
-// 
+// acrosticreader https://www.codewars.com/kata/59b843b58bcb7766660000f6/solutions/javascript
+
+function readOut(acrostic) {
+  let arr = acrostic.map(word => word.charAt())
+  return arr.join('')
+}
+
+
+//
