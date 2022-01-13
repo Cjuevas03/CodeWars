@@ -771,3 +771,12 @@ function billboard(name, price = 30){
   for (let i = 1; i <= name.length; i++){cost += price}
   return cost
 } 
+
+
+//www.codewars.com/kata/56b8903933dbe5831e000c76/train/javascript 
+function spoonerize(words) {
+  let arr = words.split(' ')
+  return [arr[1][0] + arr[0].slice(1), arr[0][0] + arr[1].slice(1)].join(' ')
+}
+
+
