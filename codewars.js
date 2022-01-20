@@ -837,4 +837,11 @@ let uniqueInOrder=function(iterable){
   }
 }
 
+//www.codewars.com/kata/556deca17c58da83c00002db/train/javascript
+function tribonacci(signature,n){
+  for(let i = 3; i < n; i++){
+    signature[i] = signature[i - 3] + signature[i - 2] + signature[i - 1]
+  }
+  return signature.slice(0, n)
+}
 
