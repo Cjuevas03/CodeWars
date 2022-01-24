@@ -856,3 +856,12 @@ function isValidWalk(walk) {
   
   return walk.length === 10 && north === south && east === west;
 }
+
+//www.codewars.com/kata/5526fc09a1bbd946250002dc/train/javascript
+function findOutlier(integers){
+  if(integers.filter(elem => elem % 2 === 0).length === 1){
+    return integers.filter(elem => elem % 2 === 0)[0]
+  } else {
+    return integers.filter(elem => elem % 2 !== 0)[0]
+  }
+}
