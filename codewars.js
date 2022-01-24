@@ -865,3 +865,12 @@ function findOutlier(integers){
     return integers.filter(elem => elem % 2 !== 0)[0]
   }
 }
+
+function persistence(num, counter = 0) {
+  if(num < 10){
+    return counter
+  } else {
+    let newNum = num.toString().split('').reduce((a,c) => a * c)
+    return persistence(newNum, counter + 1)
+  }
+}
