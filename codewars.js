@@ -866,6 +866,7 @@ function findOutlier(integers){
   }
 }
 
+//www.codewars.com/kata/55bf01e5a717a0d57e0000ec/train/javascript
 function persistence(num, counter = 0) {
   if(num < 10){
     return counter
