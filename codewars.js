@@ -875,3 +875,22 @@ function persistence(num, counter = 0) {
     return persistence(newNum, counter + 1)
   }
 }
+
+//www.codewars.com/kata/5829ca646d02cd1a65000284/train/javascript
+
+function isAgeDiverse(list) {
+  let ranges =  [ [10,20]
+  , [20,30]
+  , [30,40]
+  , [40,50]
+  , [50,60]
+  , [60,70]
+  , [70,80]
+  , [80,90]
+  , [90,100]
+  , [100,200] 
+  ]
+  return ranges.every(([minAge, maxAge]) => list.some(dev => minAge <= dev.age && dev.age < maxAge))
+}
+
+
