@@ -893,4 +893,9 @@ function isAgeDiverse(list) {
   return ranges.every(([minAge, maxAge]) => list.some(dev => minAge <= dev.age && dev.age < maxAge))
 }
 
-
+//www.codewars.com/kata/5287e858c6b5a9678200083c/train/javascript
+function narcissistic( value ) {
+  return ('' + value).split('').reduce(function(p, c){
+    return p + Math.pow(c, ('' + value).length)
+    }, 0) == value;
+}
